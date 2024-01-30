@@ -1,0 +1,275 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text color */
+}
+
+/* Service Detail Section */
+.service-detial-section {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.service-detial-header {
+    color: #f78930; /* Orange color for header */
+    font-size: 19pt;
+    line-height: 40px;
+}
+
+.service-plans-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.service-detial-banner {
+    max-width: 35%;
+    height: 350px;
+    margin-right: 20px;
+}
+ .service-detial-banner img{
+    width: 100%;
+    height: 100%;
+ }
+/* Service Plans */
+.service-plans-available {
+    flex-grow: 2;
+}
+.service-plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 20px;
+}
+.service-plan {
+    position: relative;
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd; /* Light gray border */
+    transition: all 0.3s ease-in-out;
+}
+
+.service-plan:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+/* Selected  Plan Indicator */
+.selected{
+    border: 2px  solid #f87e1a; 
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.service-plan-header{
+    display: flex;
+    justify-content: space-between;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+.service-plan-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333; /* Dark text color */
+}
+
+.service-plan-price {
+    font-size: 26px;
+    float: right;
+    clear: left;
+    color: #f87e1a; /* Dark text color */
+}
+.service-plan-price .discount{
+    text-decoration: line-through;
+    font-size: 16px;
+}
+.service-plan-tag {
+    background-color: #f78930; /* Orange color for tag */
+    color: #fff; /* White text color */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 10px;
+    position: absolute;
+    top: -17px;
+    right: 10px;
+}
+
+.service-plan-features-avialable {
+    margin-top: 15px;
+    padding-left: 0;
+}
+
+    .service-plan-features-avialable li {
+        list-style-type: none;
+        margin-bottom: 5px;
+        color: #333; /* Dark text color */
+    }
+.service-plan-features-unavialable{
+    margin-top: 10px;
+}
+    .service-plan-features-unavialable li {
+        list-style-type: none;
+        margin-bottom: 5px;
+        color: #999; /* Light text color */
+    }
+.available , .unavailable{
+    color: #f78930; /* Orange color for tick and x */
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+/* Description Section */
+
+.service-detail-description {
+    margin: 40px 5% 12px 5%;
+}
+
+.service-detail-description h2 {
+    color: #333; /* Dark text color */
+    margin-bottom: 15px;
+}
+
+.service-detail-description p {
+    color: #555; /* Gray text color */
+    font-size: 17px;
+}
+
+.service-detail-description ol {
+    color: #555; /* Gray text color */
+    margin-top: 10px;
+}
+
+.service-detail-description ol li {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+
+/* Form Container */
+
+.form-container {
+    margin: 38px 4vw;
+    padding: 28px;
+    border: 1px solid #8f8f8f4a;
+    background-color: #d0cdd517;
+    border-radius: 9px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.requirements{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.form-grouping{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.form-group{
+    width: calc(50% - 60px);
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="phone"],
+.form-container select,
+.form-container textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #707070;
+}
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="phone"] {
+    width: 100%;
+    height: 20px;
+}
+
+.form-container textarea {
+    width: 100%;
+}
+
+.form-container select{
+    width: 104.5%;
+    height: 42px;
+    padding: 8px;
+}
+.form-container input[type="text"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="phone"]:focus,
+.form-container select:focus,
+.form-container textarea:focus {
+    outline: none;
+    border: 1px solid #797777;
+}
+
+.form-container button {
+    display: block;
+    width: fit-content;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+/* Selected Plan Section */
+.unselected-plan {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.selected-plan {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    transition: all 0.6s linear;
+}
+
+.selected-plan-active{
+    opacity: 1;
+    width: auto;
+    height: auto;
+}
+
+.selected-plan h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.selected-plan p {
+    margin: 5px 0;
+}
+.selected-plan p span{
+    color: #f77b16;
+}
+
