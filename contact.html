@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page of Goo Business The best B2B Lead Generation Company</title>
+    <link rel="shortcut icon" href="/static/img/Goo%20Businesses.png" type="image/png">
+    <!-- Import Font Awesome -->
+    <script src="https://kit.fontawesome.com/4ba30c4c46.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <div class="pogress" id="pogressID"></div>
+
+    <header>
+
+        <nav>
+            <div class="logo">
+                <img src="/static/img/Goo%20Businesses.png" height="73px">
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="/whyus">Why us?</a></li>
+            </ul>
+            <form class="form" action="/searching" method="post">
+
+                <div class="search">
+                    <input class="form-ele1" type="text" id="searchbarID" name="seachbar" placeholder="Search here..."
+                        width="20vw">
+                </div>
+                <div class="btn">
+                    <button class="bttn" type="submit">Search</button>
+                </div>
+            </form>
+
+            <a href="/searching">
+                <div class="navallproduct">All Services</div>
+            </a>
+
+        </nav>
+
+        <a href="/freetrail" class="freeTrl bblink">Get Your<br>Free Trial<br>up to $30</a>
+    </header>
+
+    <main>
+        <div class="contact-section">
+            <h3>Contact Us</h3>
+            <hr/>
+            <div class="inner-section">
+                <form id="contactForm" onsubmit="return validateInputs(event)">
+                    <div class="row">
+                        <div class="form-group ">
+                            <label for="name" class="form-label">Name *</label>
+                            <input type="text" name="name" id="name" placeholder="Your name" onkeyup="checkName()"
+                                >
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="text" name="email" id="email" placeholder="Your email" onkeyup="checkEmail()"
+                                >
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="text" name="phone" id="phone" placeholder="Phone #"
+                                >
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <input type="text" name="subject" id="subject" onkeyup="checkSubject()"
+                                placeholder="Related subject">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="textarea-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea name="message" id="message" cols="30" rows="4"  onkeyup="checkMessage()"
+                                placeholder="Write your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <button type="submit" id="submit-form" class="btn-send">Send Message</button>
+                            <span class="submitting"></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/contact.js"></script>
+</body>
+
+</html>

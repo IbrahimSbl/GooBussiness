@@ -14,3 +14,12 @@
     <li>I keep the style simple , obvious to be easy to implemented dynamically. </li>
 </ol>
 
+## Project 03
+<ol>
+    <li>You can Access the contact us section from the navbar.</li>
+    <li>The form contains a validation which forces the user to insert Name, Email, Subject and Message.</li>
+    <li>Also it validates the email using Regex.</li>
+    <li>As all the work done before the code is concise, readable and clear. Tailed with commands for understandability.</li>
+    <li>The form is fully responsive.</li>
+</ol>
+

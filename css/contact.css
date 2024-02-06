@@ -1,0 +1,105 @@
+.contact-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact-section h3{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: #414141;
+    letter-spacing: 1.3px;
+}
+.contact-section hr{
+    width: 50%;
+    margin: auto auto 20px auto;
+}
+.contact-section .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact-section .form-group {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 5px); /* Set width for each input, subtracting 5px for gap */
+}
+.contact-section .textarea-group{
+    display: flex;
+    flex-direction: column;
+    width: -webkit-fill-available;  /* Make the textarea fill its parent container */
+    max-width: 100%;
+}
+.contact-section label {
+    font-size: 14px;
+    color: #b3b3b3;
+    margin: 0 0 10px 0;
+    display: inline-block;
+    padding: 0;
+    line-height: 1.5;
+}
+.contact-section label.error {
+    font-size: 13px;
+    color: red;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    background: none;
+    height: 35px;
+    padding: 0px 10px 0px 0px;
+    margin: 3px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+}
+.contact-section textarea {
+    height: auto;
+    resize: vertical;
+    width: -webkit-fill-available;
+}
+.contact-section input[type="text"]:active, 
+.contact-section input[type="text"]:focus ,
+.contact-section input[type="email"]:active, 
+.contact-section input[type="email"]:focus ,
+.contact-section textarea:active, 
+.contact-section textarea:focus 
+{
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #717171;
+}
+.contact-section .btn-send {
+    display: block;
+    width: fit-content;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.contact-section .btn-send:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width:460px){
+    
+    .contact-section .form-group {
+        width: calc(100% - 5px);
+        margin-bottom: 1.5rem!important;
+    }
+}

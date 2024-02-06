@@ -209,6 +209,7 @@ body {
 
 .form-container textarea {
     width: 100%;
+    resize: vertical;
 }
 
 .form-container select{
